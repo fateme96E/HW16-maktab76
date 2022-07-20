@@ -1,0 +1,97 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto 90px;
+    column-gap: 110px;
+    width: max-content;
+}
+
+ul {
+    list-style: none;
+    background-color: rgb(201, 198, 236);
+    color: rgb(66, 66, 66);
+    width: 250px;
+    text-align: right;
+    padding: 5px 12px;
+    border-radius: 7px;
+    margin: 20px 40px 20px;
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+
+li {
+    padding: 4px; 
+}
+
+.action-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    width: max-content;
+    height: 6px;
+    margin-top: -10px;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 0.8vw;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:first-of-type:hover {
+    background-color: rgb(6, 207, 13);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 5px 12px;
+}
+
+button:last-of-type:hover {
+    background-color: rgb(241, 138, 48);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 5px 12px;
+}
+
+@media screen and (max-width: 700px) {
+    .contact-container  {
+        grid-template-columns: 1fr;
+    }  
+    ul {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+    .contact-container  {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+    }  
+    ul {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+    .contact-container  {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }  
+    ul {
+        font-size: 14px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
